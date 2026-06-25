@@ -19,7 +19,8 @@ The website is designed to create a cozy and dreamy atmosphere where visitors ca
 
 ---
 😊Screenshot⬇️
-"C:\Users\LENOVO\Pictures\Screenshots\heading.png"
+"![Uploading boutique corner and customer review.png…]()
+"
 
 ## 🎨 Theme & Inspiration
 
