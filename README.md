@@ -1,4 +1,3 @@
-<img width="956" height="466" alt="image" src="https://github.com/user-attachments/assets/3f44dfbd-0592-471a-aac7-1cfbf4741269" /># Chai-Shop-Website
 🌸 Fairy-tale inspired tea cottage website with floral aesthetics, boutique charm, interactive animations, and a cozy cottagecore vibe. Built with HTML, CSS, and JavaScript. 🍵✨
 # 🌸🍵 Chai House 🏡✨
 
