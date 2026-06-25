@@ -21,7 +21,7 @@ The website is designed to create a cozy and dreamy atmosphere where visitors ca
 😊Screenshot⬇️
 ![Heading](heading.png)
 ![about and menu](about%20and%20menu.png)
-![boutique corner and customer review](boutique%20corner%20and%20customer%20review.png)
+![boutique corner and customer review](boutique.png)
 ![address](address.png)
 
 ## 🎨 Theme & Inspiration
