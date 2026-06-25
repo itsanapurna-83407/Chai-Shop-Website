@@ -1,0 +1,344 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+:root{
+--pink:#ffd6e7;
+--rose:#ffb3c6;
+--green:#d8f3dc;
+--mint:#c7f9cc;
+--lavender:#e7d8ff;
+--purple:#cdb4db;
+--cream:#fff8f0;
+--wood:#b08968;
+--darkwood:#7f5539;
+--white:#ffffff;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(
+180deg,
+#fff8f0 0%,
+#ffe5ec 30%,
+#f2e8ff 65%,
+#e6ffe9 100%
+);
+color:var(--darkwood);
+overflow-x:hidden;
+}
+
+/* Floating Emojis */
+
+.floating{
+position:fixed;
+font-size:2rem;
+z-index:1;
+pointer-events:none;
+animation:float 6s ease-in-out infinite;
+opacity:.8;
+}
+
+.flower1{
+top:15%;
+left:5%;
+}
+
+.flower2{
+top:60%;
+right:8%;
+animation-delay:1s;
+}
+
+.flower3{
+top:30%;
+right:15%;
+animation-delay:2s;
+}
+
+.flower4{
+bottom:15%;
+left:10%;
+animation-delay:3s;
+}
+
+.flower5{
+bottom:25%;
+right:20%;
+animation-delay:4s;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-20px);
+}
+100%{
+transform:translateY(0px);
+}
+}
+
+/* Navbar */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(10px);
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+z-index:999;
+}
+
+.logo{
+font-family:'Great Vibes',cursive;
+font-size:2.8rem;
+color:var(--wood);
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:var(--darkwood);
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d63384;
+}
+
+/* Hero */
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-family:'Great Vibes',cursive;
+font-size:6rem;
+color:var(--wood);
+margin-bottom:20px;
+text-shadow:2px 2px 8px rgba(255,255,255,.8);
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:700px;
+line-height:2;
+background:rgba(255,255,255,.6);
+padding:20px;
+border-radius:25px;
+}
+
+.hero button{
+margin-top:30px;
+padding:15px 35px;
+border:none;
+border-radius:50px;
+font-size:1rem;
+cursor:pointer;
+background:linear-gradient(
+135deg,
+var(--rose),
+var(--purple)
+);
+color:white;
+font-weight:600;
+transition:.4s;
+}
+
+.hero button:hover{
+transform:translateY(-5px);
+}
+
+/* Sections */
+
+section{
+padding:90px 10%;
+position:relative;
+z-index:2;
+}
+
+section h2{
+font-family:'Great Vibes',cursive;
+font-size:4rem;
+text-align:center;
+margin-bottom:30px;
+color:var(--wood);
+}
+
+section p{
+max-width:850px;
+margin:auto;
+text-align:center;
+line-height:2;
+font-size:1.05rem;
+}
+
+/* About */
+
+#about{
+background:rgba(255,255,255,.45);
+backdrop-filter:blur(8px);
+border-radius:30px;
+margin:40px;
+}
+
+/* Menu */
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:linear-gradient(
+135deg,
+#fff,
+#ffe8f1,
+#f4ecff,
+#eaffea
+);
+padding:25px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+font-size:1.3rem;
+margin-bottom:15px;
+color:var(--wood);
+}
+
+/* Boutique */
+
+#boutique{
+background:linear-gradient(
+135deg,
+rgba(255,214,231,.4),
+rgba(231,216,255,.4)
+);
+border-radius:30px;
+margin:40px;
+}
+
+/* Reviews */
+
+.review-container{
+max-width:700px;
+margin:auto;
+}
+
+.review{
+display:none;
+background:white;
+padding:40px;
+border-radius:30px;
+text-align:center;
+font-size:1.2rem;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.review.active{
+display:block;
+animation:fade .8s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Contact */
+
+#contact{
+background:rgba(255,255,255,.5);
+border-radius:30px;
+margin:40px;
+}
+
+/* Footer */
+
+footer{
+margin-top:50px;
+padding:25px;
+text-align:center;
+background:linear-gradient(
+135deg,
+var(--wood),
+var(--purple)
+);
+color:white;
+font-size:1.1rem;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:4rem;
+}
+
+section h2{
+font-size:3rem;
+}
+
+nav ul{
+display:none;
+}
+
+.logo{
+font-size:2.2rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+section{
+padding:70px 8%;
+}
+
+#about,
+#boutique,
+#contact{
+margin:20px;
+}
+
+}
